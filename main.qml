@@ -27,6 +27,10 @@ ApplicationWindow {
         }
     }
 
+    function call(name, args) {
+        callback.call(name, JSON.stringify(args));
+    }
+
     function set_bg_color(color) {
         bg.color = JSON.parse(color);
     }
